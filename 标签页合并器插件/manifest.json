@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "标签页合并器",
+  "version": "1.2",
+  "description": "一个简单的Chrome插件，用于合并和管理标签页组。",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+    }
+}
